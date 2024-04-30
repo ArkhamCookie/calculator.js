@@ -1,3 +1,3 @@
 # Calculator
 
-A basic calculator in pure HTML, CSS, and JS.
+A basic calculator written in pure HTML, CSS, and JS.
