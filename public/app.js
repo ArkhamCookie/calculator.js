@@ -51,10 +51,12 @@ function appendOperation(content) {
 	currentOperation.textContent += content
 }
 
+/** Delete 1 of current operand */
 function deleteOperand() {
 	currentOperation.textContent = currentOperation.textContent.toString().slice(0, -1)
 }
 
+/** Add a decimal if one doesn't exist */
 function apppendDecimal() {
 	if (currentOperation.textContent.includes('.')) {
 		return
