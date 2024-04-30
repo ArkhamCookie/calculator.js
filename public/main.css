@@ -92,20 +92,20 @@ button {
 }
 
 .clear-btn {
-	background-color: #faa;
+	background-color: #e99;
 }
 .delete-btn {
-	background-color: #aff;
+	background-color: #99e;
 }
 
 .btn:hover {
 	background-color: #ddd;
 }
 .clear-btn:hover {
-	background-color: #e99;
+	background-color: #faa;
 }
 .delete-btn:hover {
-	background-color: #99e;
+	background-color: #aff;
 }
 
 /* Footer */
