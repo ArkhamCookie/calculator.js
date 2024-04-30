@@ -98,6 +98,16 @@ button {
 	background-color: #aff;
 }
 
+.btn:hover {
+	background-color: #ddd;
+}
+.clear-btn:hover {
+	background-color: #e99;
+}
+.delete-btn:hover {
+	background-color: #99e;
+}
+
 /* Footer */
 
 .footer {
