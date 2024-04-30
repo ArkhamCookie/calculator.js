@@ -71,7 +71,7 @@ function keyboardInput(event) {
 
 	switch (event.key) {
 		case '.':
-			appendOperation(event.key)
+			apppendDecimal()
 			break
 
 		case '=':
