@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	background-color: #f6f6f6;
+	color: #222;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.6;
+	margin-bottom: 100px;
+}
+
+/* General */
+
+.calculator,
+.display,
+.btn {
+	border: 2px #333;
+}
+
+.calculator-grid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 75vh;
+	min-height: 500px;
+	padding: 10px;
+	margin-top: 50px;
+}
+
+.calculator {
+	width: 400px;
+	border-radius: 15px;
+	padding: 20px;
+	background-color: #aaa;
+}
+
+/* Display */
+
+.display {
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background-color: #eee;
+	text-align: right;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.display-last {
+	min-height: 32px;
+	font-size: 20px;
+}
+.display-current {
+	min-height: 64px;
+	font-size: 40px;
+}
+
+/* Buttons */
+
+button {
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.options {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+.clear-btn,
+.delete-btn {
+	grid-column: span 2
+}
+
+.btn {
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #eee;
+	font-size: 20px;
+}
+
+.clear-btn {
+	background-color: #faa;
+}
+.delete-btn {
+	background-color: #aff;
+}
+
+/* Footer */
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+}
