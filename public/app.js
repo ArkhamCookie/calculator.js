@@ -14,11 +14,17 @@ const lastOperation = document.querySelector('.display-last')
 // Setup Operands
 let firstOperand = ''
 let secondOperand = ''
+let currentOperator
 
 // Setup Buttons
 numberButtons.forEach((button) => {
 	button.addEventListener('click', function() {
 		appendOperation(button.textContent)
+	})
+})
+operatorButtons.forEach((button) => {
+	button.addEventListener('click', function() {
+		setOperator(button.textContent)
 	})
 })
 clearButton.addEventListener('click', reset)
@@ -64,6 +70,24 @@ function apppendDecimal() {
 	currentOperation.textContent += '.'
 }
 
+/**
+ * Set current operator
+ * @param {string} operator
+ */
+function setOperator(operator) {
+	if (currentOperator) {
+		evaluate()
+	}
+	firstOperand = currentOperation.textContent
+	currentOperation.textContent = ''
+	currentOperator = operator
+	lastOperation.textContent = `${firstOperand} ${operator}`
+}
+
+function evaluate() {
+	console.log('placeholder')
+}
+
 /** Handles keyboard inputs */
 function keyboardInput(event) {
 	if (event.key >= 0 && event.key <= 9) {
@@ -88,6 +112,7 @@ function keyboardInput(event) {
 		case '-':
 		case '*':
 		case '/':
+			setOperator(event.key)
 			break
 
 		default:
