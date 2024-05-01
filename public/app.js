@@ -85,6 +85,7 @@ function setOperator(operator) {
 	lastOperation.textContent = `${firstOperand} ${operator}`
 }
 
+/** Calculate result of operation and display it */
 function evaluate() {
 	secondOperand = currentOperation.textContent
 	currentOperation.textContent = operate(currentOperator, firstOperand, secondOperand)
