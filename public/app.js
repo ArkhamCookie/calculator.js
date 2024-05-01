@@ -30,6 +30,7 @@ operatorButtons.forEach((button) => {
 clearButton.addEventListener('click', reset)
 deleteButton.addEventListener('click', deleteOperand)
 decimalButton.addEventListener('click', apppendDecimal)
+equalsButton.addEventListener('click', evaluate)
 
 window.addEventListener('keydown', keyboardInput)
 
@@ -85,7 +86,24 @@ function setOperator(operator) {
 }
 
 function evaluate() {
-	console.log('placeholder')
+	secondOperand = currentOperation.textContent
+	currentOperation.textContent = operate(currentOperator, firstOperand, secondOperand)
+	lastOperation.textContent = ''
+}
+
+function operate(operator, a, b) {
+	a = Number(a)
+	b = Number(b)
+	switch (operator) {
+		case '+':
+			return a + b
+		case '-':
+			return a - b
+		case '*':
+			return a * b
+		case '/':
+			return a / b
+	}
 }
 
 /** Handles keyboard inputs */
