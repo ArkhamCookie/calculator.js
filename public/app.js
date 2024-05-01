@@ -11,7 +11,7 @@ const display = document.querySelector('.display')
 const currentOperation = document.querySelector('.display-current')
 const lastOperation = document.querySelector('.display-last')
 
-// Setup Operands
+// Setup Storage Variables for Calculating
 let firstOperand = ''
 let secondOperand = ''
 let currentOperator
