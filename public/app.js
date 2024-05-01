@@ -92,7 +92,7 @@ function evaluate() {
 }
 
 /**
- * Return result of operation
+ * Returns result of operation
  * @param {string} operator
  * @param {string} a
  * @param {string} b
