@@ -96,7 +96,7 @@ function evaluate() {
  * @param {string} operator
  * @param {string} a
  * @param {string} b
- * @returns
+ * @returns {number} Result of operation
  */
 function operate(operator, a, b) {
 	a = Number(a)
