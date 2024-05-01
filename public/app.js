@@ -45,6 +45,7 @@ function reset() {
 	secondOperand = ''
 	currentOperation.textContent = '0'
 	lastOperation.textContent = ''
+	currentOperator = null
 }
 
 /**
