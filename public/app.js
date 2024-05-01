@@ -114,8 +114,5 @@ function keyboardInput(event) {
 		case '/':
 			setOperator(event.key)
 			break
-
-		default:
-			break
 	}
 }
