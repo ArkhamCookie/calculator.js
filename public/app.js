@@ -128,6 +128,7 @@ function keyboardInput(event) {
 
 		case '=':
 		case 'Enter':
+			evaluate()
 			break
 
 		case 'Backspace':
