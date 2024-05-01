@@ -91,6 +91,13 @@ function evaluate() {
 	lastOperation.textContent = ''
 }
 
+/**
+ * Return result of operation
+ * @param {string} operator
+ * @param {string} a
+ * @param {string} b
+ * @returns
+ */
 function operate(operator, a, b) {
 	a = Number(a)
 	b = Number(b)
