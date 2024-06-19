@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "A basic calculator written in pure HTML, CSS, and JS.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+		"build": "vite build public/",
+		"preview": "vite preview public/"
+	},
   "author": "ArkhamCookie",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.3.1"
+  }
 }
