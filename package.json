@@ -1,0 +1,9 @@
+{
+  "name": "@arkhamcookie/calculator",
+  "version": "1.0.0",
+  "description": "A basic calculator written in pure HTML, CSS, and JS.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "ArkhamCookie",
+  "license": "MIT"
+}
