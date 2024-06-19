@@ -4,8 +4,8 @@
   "description": "A basic calculator written in pure HTML, CSS, and JS.",
   "main": "index.js",
   "scripts": {
-		"build": "vite build public/",
-		"preview": "vite preview public/"
+		"build": "vite build src/ --outDir ../dist/",
+		"preview": "vite preview"
 	},
   "author": "ArkhamCookie",
   "license": "MIT",
